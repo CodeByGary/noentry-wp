@@ -1,0 +1,70 @@
+/* Style for Admin Access Control settings page */
+
+#noentry-wp-accordion h3 {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    margin: 0;
+}
+
+.noentry-wp-rule-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.noentry-wp-rule-row select,
+.noentry-wp-rule-row input[type="text"] {
+    font-size: 14px;
+    padding: 6px 8px;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid #ccd0d4;
+}
+
+.noentry-wp-rule-row input[type="text"] {
+    flex: 1 1 300px;
+    /* allow growing */
+    max-width: 100%;
+}
+
+.noentry-wp-rule-row select {
+    width: 160px;
+    min-width: 120px;
+}
+
+.noentry-wp-rule-row .button {
+    height: 36px;
+    padding: 0 10px;
+}
+
+#noentry-wp-accordion .noentry-wp-add-row {
+    margin: 10px auto auto auto;
+    display: block;
+}
+
+#noentry-wp p.submit {
+    text-align: center;
+}
+
+.noentry-wp-coffe {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #000;
+}
+
+
+
+@media (max-width: 600px) {
+    .noentry-wp-rule-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .noentry-wp-rule-row input,
+    .noentry-wp-rule-row select {
+        width: 100%;
+    }
+}
